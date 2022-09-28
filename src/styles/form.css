@@ -1,0 +1,202 @@
+.form-content {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 12px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.inp-name {
+    width: 80%;
+    padding: 14px;
+    border-radius: 4px;
+    border: 1.5px solid;
+    border-image-slice: 1;
+    border-width: 1.5px;
+}
+
+.grad {
+    border-image-source: linear-gradient(135deg, rgb(255, 242, 0), rgb(227, 15, 110), rgb(227, 15, 110));
+}
+
+.inp-name:focus {
+    outline: none;
+}
+
+.inp-name::placeholder {
+    color: transparent;
+}
+
+.inp-name:focus::placeholder {
+    color: black;
+    transition: 2s;
+}
+
+.inp-name:focus+.label-name {
+    top: 68px;
+    background-color: rgba(225, 0.1, 0.1, 0.1);
+    backdrop-filter: blur(30px);
+    padding-right: 3px;
+    transition: 1s;
+    color: red;
+}
+.inp-name:not(:placeholder-shown).inp-name:not(:focus)+.label-name {
+    top: 68px;
+    background-color: rgba(225, 0.1, 0.1, 0.1);
+    backdrop-filter: blur(30px);
+    padding-right: 3px;
+    transition: 1s;
+    color: red;
+}
+.label-name {
+    position: absolute;
+    left: 65px;
+    top: 90px;
+}
+
+
+
+
+.inp-add {
+    width: 80%;
+    padding: 14px;
+    border-radius: 4px;
+    border: 1.5px solid;
+    border-image-slice: 1;
+    border-width: 1.5px;
+}
+
+.grad {
+    border-image-source: linear-gradient(135deg, rgb(255, 242, 0), rgb(227, 15, 110), rgb(227, 15, 110));
+}
+
+.inp-add:focus {
+    outline: none;
+}
+
+.inp-add::placeholder {
+    color: transparent;
+}
+
+.inp-add:focus::placeholder {
+    color: black;
+    transition: 2s;
+}
+
+.inp-add:focus+.label-add {
+    top: 135px;
+    background-color: rgba(225, 0.1, 0.1, 0.1);
+    backdrop-filter: blur(30px);
+    padding-right: 3px;
+    transition: 1s;
+    color: red;
+}
+.inp-add:not(:placeholder-shown).inp-add:not(:focus)+.label-add {
+    top: 135px;
+    background-color: rgba(225, 0.1, 0.1, 0.1);
+    backdrop-filter: blur(30px);
+    padding-right: 3px;
+    transition: 1s;
+    color: red;
+}
+.label-add {
+    position: absolute;
+    left: 65px;
+    top: 158px;
+}
+
+
+
+
+.inp-email {
+    width: 80%;
+    padding: 14px;
+    border-radius: 4px;
+    border: 1.5px solid;
+    border-image-slice: 1;
+    border-width: 1.5px;
+}
+
+.grad {
+    border-image-source: linear-gradient(135deg, rgb(255, 242, 0), rgb(227, 15, 110), rgb(227, 15, 110));
+}
+
+.inp-email:focus {
+    outline: none;
+}
+
+.inp-email::placeholder {
+    color: transparent;
+}
+
+.inp-email:focus::placeholder {
+    color: black;
+    transition: 2s;
+}
+
+.inp-email:focus+.label-email {
+    top: 205px;
+    background-color: rgba(225, 0.1, 0.1, 0.1);
+    backdrop-filter: blur(30px);
+    padding-right: 3px;
+    transition: 1s;
+    color: red;
+}
+.inp-email:not(:placeholder-shown).inp-email:not(:focus)+.label-email {
+    top: 205px;
+    background-color: rgba(225, 0.1, 0.1, 0.1);
+    backdrop-filter: blur(30px);
+    padding-right: 3px;
+    transition: 1s;
+    color: red;
+}
+.label-email {
+    position: absolute;
+    left: 65px;
+    top: 225px;
+}
+
+
+.inp-dob {
+    width: 80%;
+    padding: 14px;
+    border-radius: 4px;
+    border: 1.5px solid;
+    border-image-slice: 1;
+    border-width: 1.5px;
+}
+
+.grad {
+    border-image-source: linear-gradient(135deg, rgb(255, 242, 0), rgb(227, 15, 110), rgb(227, 15, 110));
+}
+
+.label-dob {
+    visibility: hidden;
+}
+
+
+
+
+.submit-btn {
+    width: 80%;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(135deg, rgb(255, 242, 0), rgb(227, 15, 110), rgb(227, 15, 110));
+    color: rgb(232, 232, 232);
+    border: none;
+    border-radius: 7px;
+}
